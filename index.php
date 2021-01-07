@@ -17,8 +17,17 @@
     echo "<h1>Welcome to ".$name."!</h1>";
     echo "<h2>You have R".$credit." in your wallet.</h2>";
 
+    // Show the price of all the products
     foreach($products as $key => $value){
       echo "<p>The ".$key." costs R".$value."</p>";
+    }
+
+    //Products the viewer can afford
+    echo "<h2>Items you can afford</h2>";
+    foreach($products as $key => $value){
+      if($value <= $credit){
+        echo "<p>".$key."</p>";
+      }
     }
     ?>
   </body>
