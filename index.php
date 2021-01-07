@@ -7,6 +7,8 @@
     <?php
     $name = "PHP Test Store";
     $credit = 10000;
+
+    // Product variables with keys
     $products['Computer']=7500;
     $products['Car']=150000;
     $products['iPhone']=10000;
